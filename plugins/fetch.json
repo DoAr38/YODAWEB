@@ -6,5 +6,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-second-webview": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/walidowais/cordova-plugin-second-webview.git"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

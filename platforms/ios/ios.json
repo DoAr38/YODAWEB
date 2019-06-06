@@ -4,16 +4,40 @@
     "uninstalled": []
   },
   "config_munge": {
-    "files": {}
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"WebViewPlugin\"><param name=\"ios-package\" value=\"WebViewPlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-second-webview": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },
   "dependent_plugins": {},
-  "modules": [],
+  "modules": [
+    {
+      "id": "cordova-plugin-second-webview.webview",
+      "file": "plugins/cordova-plugin-second-webview/www/webViewPlugin.js",
+      "pluginId": "cordova-plugin-second-webview",
+      "clobbers": [
+        "webview"
+      ]
+    }
+  ],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.3"
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-second-webview": "2.11.4"
   }
 }

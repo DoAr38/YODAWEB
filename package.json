@@ -15,14 +15,22 @@
   "dependencies": {
     "cordova-android": "^8.0.0",
     "cordova-browser": "^6.0.0",
-    "cordova-ios": "^5.0.1"
+    "cordova-ios": "^5.0.1",
+    "cordova-plugin-second-webview": "git+https://github.com/walidowais/cordova-plugin-second-webview.git"
   },
   "devDependencies": {
-    "cordova-plugin-whitelist": "^1.3.3"
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordodva-plugin-whitelist": "1",
+    "cordova-plugin-muti-webview": "1",
+    "cordova-plugin-muti-second-webview": "2.11.4"
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordodva-plugin-whitelist": {},
+      "cordova-plugin-second-webview": {},
+      "cordova-plugin-muti-webview": {},
+      "cordova-plugin-muti-second-webview": {}
     },
     "platforms": [
       "browser",
