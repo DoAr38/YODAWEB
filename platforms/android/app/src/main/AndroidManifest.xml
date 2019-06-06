@@ -9,7 +9,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:exported="true" android:label="@string/activity_name" android:launchMode="standard" android:name="cl.kunder.webview.WebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault" android:windowSoftInputMode="adjustResize" />
     </application>
     <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28" />
 </manifest>
